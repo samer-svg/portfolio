@@ -1,5 +1,5 @@
-import Component from "../portfolio"
+import PortfolioWrapper from '../components/portfolio-wrapper'
 
 export default function Page() {
-  return <Component />
+  return <PortfolioWrapper />
 }

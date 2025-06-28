@@ -15,7 +15,24 @@ import { ResumeActions } from "./components/resume/pdf-generator"
 import { AnimationProvider } from "./components/animations/animation-provider"
 import { AnimatedElement } from "./components/animations/animated-element"
 import { SimplePerformanceMonitor } from "./components/admin/simple-performance-monitor"
-import { useEffect, useState, memo, useCallback } from "react"
+import { useEffect, useState, memo, useCallback, Suspense } from "react"
+
+// Error boundary component
+const ErrorFallback = ({ error }: { error: Error }) => (
+  <div className="min-h-screen bg-gray-950 text-gray-100 flex items-center justify-center p-4">
+    <div className="text-center space-y-4 max-w-md">
+      <div className="text-red-400 text-6xl">⚠️</div>
+      <h1 className="text-2xl font-bold text-red-400">Something went wrong</h1>
+      <p className="text-gray-400">{error.message}</p>
+      <button
+        onClick={() => window.location.reload()}
+        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors"
+      >
+        Reload Page
+      </button>
+    </div>
+  </div>
+)
 
 // Memoized navigation component
 const Navigation = memo(({ isScrolled }: { isScrolled: boolean }) => {
@@ -112,8 +129,7 @@ function PortfolioContent() {
     <AnimationProvider>
       <div className="min-h-screen bg-gray-950 text-gray-100">
         {/* Simple Performance monitoring (dev only) */}
-        <SimplePerformanceMonitor />
-
+        {process.env.NODE_ENV === 'development' && <SimplePerformanceMonitor />}
 
         {/* Navigation */}
         <Navigation isScrolled={isScrolled} />
@@ -171,7 +187,9 @@ function PortfolioContent() {
                 >
                   View My Work
                 </Button>
-                <ResumeActions />
+                <Suspense fallback={<div className="h-11 w-32 bg-gray-700 rounded animate-pulse" />}>
+                  <ResumeActions />
+                </Suspense>
               </AnimatedElement>
               <AnimatedElement animation="fadeInUp" delay={1.3}>
                 <SocialLinks className="pt-8" />
@@ -181,10 +199,18 @@ function PortfolioContent() {
         </section>
 
         {/* Lazy Loaded Sections */}
-        <LazyAboutSection />
-        <LazyProjectsSection />
-        <LazySkillsSection />
-        <LazyContactSection />
+        <Suspense fallback={<div className="h-96 bg-gray-900 animate-pulse" />}>
+          <LazyAboutSection />
+        </Suspense>
+        <Suspense fallback={<div className="h-96 bg-gray-900 animate-pulse" />}>
+          <LazyProjectsSection />
+        </Suspense>
+        <Suspense fallback={<div className="h-96 bg-gray-900 animate-pulse" />}>
+          <LazySkillsSection />
+        </Suspense>
+        <Suspense fallback={<div className="h-96 bg-gray-900 animate-pulse" />}>
+          <LazyContactSection />
+        </Suspense>
 
         {/* Footer */}
         <footer className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-800 mt-8 sm:mt-12 lg:mt-16">

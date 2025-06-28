@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable experimental features for better performance
-  experimental: {
-    optimizeCss: true,
-    optimizePackageImports: ['lucide-react', '@/components/ui'],
-  },
+  // Remove experimental features that might cause issues
+  // experimental: {
+  //   optimizeCss: true,
+  //   optimizePackageImports: ['lucide-react', '@/components/ui'],
+  // },
   
   eslint: {
     ignoreDuringBuilds: true,
@@ -19,12 +19,15 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    unoptimized: true,
+    unoptimized: false,
   },
   
   // Compression and optimization
   compress: true,
   poweredByHeader: false,
+  
+  // Add output configuration for better deployment
+  output: 'standalone',
   
   // Bundle analyzer (uncomment to analyze bundle size)
   // bundleAnalyzer: {
