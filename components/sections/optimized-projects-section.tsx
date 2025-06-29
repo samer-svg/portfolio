@@ -32,12 +32,12 @@ const projects = [
     image: "/images/projects/todo-app-react.png",
   },
   {
-    id: "login-signup-page" as ProjectId,
-    title: "Login Signup Page",
+    id: "movies" as ProjectId,
+    title: "Movies App",
     description:
-      "Auth UI with React + Redux: Smooth animated login/signup forms with Zod validation. Features a stunning purple gradient background and modern card design.",
-    tech: ["React", "Redux", "Zod", "JavaScript"],
-    image: "/images/projects/login-signup-page.png",
+      "A modern movie discovery app built with React and Vite. Features movie search, filtering, responsive design, and integration with a movie API. Clean UI with dark theme and smooth animations.",
+    tech: ["React", "Vite", "JavaScript", "CSS3", "API Integration"],
+    image: "/images/projects/movies.png",
   },
   {
     id: "hangman-game" as ProjectId,
