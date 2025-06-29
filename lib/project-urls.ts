@@ -10,9 +10,9 @@ export const projectUrls = {
     github: "https://github.com/samer-svg/Todo-app-react-",
     demo: "https://cosmic-tasks-samer.vercel.app/",
   },
-  "login-signup-page": {
-    github: "https://github.com/samer-svg/login-signup-page",
-    demo: "https://auth-ui-samer.vercel.app/", 
+  "movies": {
+    github: "https://github.com/samer-svg/movies",
+    demo: "https://movies-samer.vercel.app/",
   },
   "hangman-game": {
     github: "https://github.com/samer-svg/Hangman-Game",
@@ -51,7 +51,7 @@ export function getDeploymentStatus() {
 export const suggestedProjectNames = {
   "blog-app": "blog-app-samer",
   "todo-app-react": "cosmic-tasks-samer",
-  "login-signup-page": "auth-ui-samer",
+  "movies": "movies-samer",
   "hangman-game": "hangman-game-samer",
   "memory-card": "memory-card-samer",
   "snake-game": "snake-game-samer",
