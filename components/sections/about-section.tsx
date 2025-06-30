@@ -23,12 +23,12 @@ export default function AboutSection() {
         </div>
 
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 transition-all duration-1000 ${
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7 lg:gap-8 transition-all duration-1000 ${
             hasIntersected ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          {/* Summary Card */}
-          <Card className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 lg:col-span-2">
+          {/* Professional Summary Card (spans all columns) */}
+          <Card className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 lg:col-span-3 py-3">
             <CardHeader>
               <CardTitle className="flex items-center text-xl text-gray-100">
                 <User className="w-5 h-5 mr-2 text-blue-400" />
@@ -36,7 +36,7 @@ export default function AboutSection() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed text-xl">
                 Self-taught frontend developer who loves crafting smooth, responsive UIs with React and Tailwind. Quick
                 learner, team player, and always down to build cool stuff that users actually enjoy. Currently expanding
                 my skills into full-stack development to become a more well-rounded developer.
@@ -58,29 +58,10 @@ export default function AboutSection() {
             </CardContent>
           </Card>
 
-          {/* Education Card */}
-          <Card className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105">
-            <CardHeader>
-              <CardTitle className="flex items-center text-xl text-gray-100">
-                <GraduationCap className="w-5 h-5 mr-2 text-blue-400" />
-                Education
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                <h3 className="font-semibold text-gray-200">B.S. in Computer Science</h3>
-                <p className="text-gray-400">Lattakia University, Syria</p>
-                <Badge variant="outline" className="border-yellow-600 text-yellow-400">
-                  In Progress
-                </Badge>
-              </div>
-            </CardContent>
-          </Card>
-
           {/* Languages Card */}
-          <Card className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 lg:col-span-2">
+          <Card className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 lg:col-span-2 ">
             <CardHeader>
-              <CardTitle className="flex items-center text-xl text-gray-100">
+              <CardTitle className="flex items-center justify-center text-xl text-gray-100">
                 <Languages className="w-5 h-5 mr-2 text-blue-400" />
                 Languages
               </CardTitle>
