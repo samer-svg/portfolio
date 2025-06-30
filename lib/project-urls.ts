@@ -6,18 +6,17 @@ export const projectUrls = {
     github: "https://github.com/samer-svg/blog-app",
     demo: "https://blog-app-samer.vercel.app/",
   },
-  "todo-app-react": {
-    github: "https://github.com/samer-svg/Todo-app-react-",
-    demo: "https://cosmic-tasks-samer.vercel.app/",
+  "gemini-app": {
+    github: "https://github.com/samer-svg/gemini-app",
+    demo: "https://gemini-app-wheat.vercel.app/",
+  },
+  "nasa-project": {
+    github: "https://github.com/samer-svg/nasa-app",
+    demo: "https://nasa-app-samer.vercel.app/",
   },
   "movies": {
     github: "https://github.com/samer-svg/movies",
     demo: "https://movies-samer.vercel.app/",
-  },
-  "hangman-game": {
-    github: "https://github.com/samer-svg/Hangman-Game",
-    demo: "https://hangman-game-samer.vercel.app/",
-    currentDemo: "https://samer-svg.github.io/Hangman-Game/", 
   },
   "memory-card": {
     github: "https://github.com/samer-svg/Memory-Card-Game",
@@ -50,9 +49,9 @@ export function getDeploymentStatus() {
 // Suggested Vercel project names (URL-friendly)
 export const suggestedProjectNames = {
   "blog-app": "blog-app-samer",
-  "todo-app-react": "cosmic-tasks-samer",
+  "gemini-app": "gemini-app-wheat",
+  "nasa-project": "nasa-app-samer",
   "movies": "movies-samer",
-  "hangman-game": "hangman-game-samer",
   "memory-card": "memory-card-samer",
   "snake-game": "snake-game-samer",
 } as const
