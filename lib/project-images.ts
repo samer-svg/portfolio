@@ -1,9 +1,9 @@
 // Project image configuration
 export const projectImages = {
   "blog-app": "/images/projects/blog-app.png",
-  "todo-app-react": "/images/projects/todo-app-react.png",
+  "gemini-app": "/images/projects/gemini-app.png",
+  "nasa-project": "/images/projects/nasa-project.png",
   "movies": "/images/projects/movies.png",
-  "hangman-game": "/images/projects/hangman-game.png",
   "memory-card": "/images/projects/memory-card.png",
   "snake-game": "/images/projects/snake-game.png",
 } as const
@@ -17,10 +17,9 @@ export function getProjectImage(projectId: ProjectId): string {
 // Fallback images for development
 export const fallbackImages = {
   "blog-app": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop&crop=center",
-  "todo-app-react": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center",
+  "gemini-app": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=center",
+  "nasa-project": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=600&h=400&fit=crop&crop=center",
   "movies": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&h=400&fit=crop&crop=center",
-  "todo-app": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop&crop=center",
-  "hangman-game": "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=600&h=400&fit=crop&crop=center",
-  "developer-portfolio":
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+  "memory-card": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=600&h=400&fit=crop&crop=center",
+  "snake-game": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=400&fit=crop&crop=center",
 }
