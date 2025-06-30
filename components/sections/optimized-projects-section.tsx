@@ -24,12 +24,12 @@ const projects = [
     image: "/images/projects/blog-app.png",
   },
   {
-    id: "todo-app-react" as ProjectId,
-    title: "Cosmic Tasks",
+    id: "nasa-project" as ProjectId,
+    title: "NASA Project",
     description:
-      "A beautiful, responsive todo list application with a cosmic purple theme ✨. Features priority levels, task management, and an inspiring motivational quote.",
-    tech: ["React", "JavaScript", "CSS3", "Responsive Design"],
-    image: "/images/projects/todo-app-react.png",
+      "A visually stunning NASA explorer app built with React and Vite. Browse NASA's Astronomy Picture of the Day, search for space images, and enjoy a responsive, modern UI.",
+    tech: ["React", "Vite", "JavaScript", "CSS3", "NASA API"],
+    image: "/images/projects/nasa-project.png",
   },
   {
     id: "movies" as ProjectId,
@@ -40,12 +40,12 @@ const projects = [
     image: "/images/projects/movies.png",
   },
   {
-    id: "hangman-game" as ProjectId,
-    title: "Hangman Game",
+    id: "gemini-app" as ProjectId,
+    title: "Gemini App",
     description:
-      "Interactive Hangman game with modern UI design, hint system, and visual hangman progression. Features a clean orange-themed interface with clickable alphabet buttons and real-time feedback.",
-    tech: ["JavaScript", "HTML5", "CSS3", "Game Logic"],
-    image: "/images/projects/hangman-game.png",
+      "A Gemini AI chat clone built with React and Vite. Features conversational UI, prompt history, and a sleek, modern design with smooth animations.",
+    tech: ["React", "Vite", "JavaScript", "CSS3", "gemini API"],
+    image: "/images/projects/gemini-app.png",
   },
   {
     id: "memory-card" as ProjectId,
@@ -141,9 +141,6 @@ const ProjectCard = memo(({ project, index }: { project: (typeof projects)[0]; i
                 <ExternalLink className="w-4 h-4" />
               </Link>
             </div>
-          </div>
-          <div className="absolute top-4 left-4">
-            <DeploymentStatus status={urls.status} />
           </div>
         </div>
       </MemoizedCardHeader>
