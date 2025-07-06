@@ -25,7 +25,7 @@ const skills = [
     icon: Database,
     items: [
       "Node.js",
-      { name: "Express", stage: "beginner" },
+      "Express",
       { name: "PostgreSQL", stage: "intermediate" },
       { name: "MongoDB", stage: "beginner" },
       "Git & GitHub",

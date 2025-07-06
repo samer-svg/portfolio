@@ -6,28 +6,26 @@ export const projectUrls = {
     github: "https://github.com/samer-svg/blog-app",
     demo: "https://blog-app-samer.vercel.app/",
   },
-  "todo-app-react": {
-    github: "https://github.com/samer-svg/Todo-app-react-",
-    demo: "https://cosmic-tasks-samer.vercel.app/",
+  "gemini-app": {
+    github: "https://github.com/samer-svg/gemini-app",
+    demo: "https://gemini-app-wheat.vercel.app/",
   },
-  "login-signup-page": {
-    github: "https://github.com/samer-svg/login-signup-page",
-    demo: "https://auth-ui-samer.vercel.app/", 
+  "nasa-project": {
+    github: "https://github.com/samer-svg/nasa-app",
+    demo: "https://nasa-app-samer.vercel.app/",
   },
-  "hangman-game": {
-    github: "https://github.com/samer-svg/Hangman-Game",
-    demo: "https://hangman-game-samer.vercel.app/",
-    currentDemo: "https://samer-svg.github.io/Hangman-Game/", 
+  "movies": {
+    github: "https://github.com/samer-svg/movies",
+    demo: "https://movies-samer.vercel.app/",
   },
   "memory-card": {
     github: "https://github.com/samer-svg/Memory-Card-Game",
     demo: "https://memory-cards-samer.vercel.app/",
     currentDemo: "https://samer-svg.github.io/Memory-Card-Game/", 
   },
-  "snake-game": {
-    github: "https://github.com/samer-svg/Snake-Game",
-    demo: "https://snake-game-samer.vercel.app/",
-    currentDemo: "https://samer-svg.github.io/Snake-Game/", // Current GitHub Pages
+  "express-api": {
+    github: "https://github.com/samer-svg/express-basic-api",
+    demo: "https://express-api-black.vercel.app/",
   },
 } as const
 
@@ -50,9 +48,9 @@ export function getDeploymentStatus() {
 // Suggested Vercel project names (URL-friendly)
 export const suggestedProjectNames = {
   "blog-app": "blog-app-samer",
-  "todo-app-react": "cosmic-tasks-samer",
-  "login-signup-page": "auth-ui-samer",
-  "hangman-game": "hangman-game-samer",
+  "gemini-app": "gemini-app-wheat",
+  "nasa-project": "nasa-app-samer",
+  "movies": "movies-samer",
   "memory-card": "memory-card-samer",
-  "snake-game": "snake-game-samer",
+  "express-api": "express-api-black",
 } as const

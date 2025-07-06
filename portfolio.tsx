@@ -11,7 +11,6 @@ import {
   LazyAboutSection,
 } from "./components/lazy-sections"
 import { useOptimizedIntersectionObserver } from "./hooks/use-optimized-intersection-observer"
-import { ResumeActions } from "./components/resume/pdf-generator"
 import { AnimationProvider } from "./components/animations/animation-provider"
 import { AnimatedElement } from "./components/animations/animated-element"
 import { SimplePerformanceMonitor } from "./components/admin/simple-performance-monitor"
@@ -292,9 +291,6 @@ function PortfolioContent() {
                 >
                   View My Work
                 </Button>
-                <Suspense fallback={<div className="h-11 w-32 bg-gray-700 rounded animate-pulse" />}>
-                  <ResumeActions />
-                </Suspense>
               </AnimatedElement>
               <AnimatedElement animation="fadeInUp" delay={1.3}>
                 <SocialLinks className="pt-8" />

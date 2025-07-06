@@ -24,28 +24,28 @@ const projects = [
     image: "/images/projects/blog-app.png",
   },
   {
-    id: "todo-app-react" as ProjectId,
-    title: "Cosmic Tasks",
+    id: "nasa-project" as ProjectId,
+    title: "NASA Project",
     description:
-      "A beautiful, responsive todo list application with a cosmic purple theme ✨. Features priority levels, task management, and an inspiring motivational quote.",
-    tech: ["React", "JavaScript", "CSS3", "Responsive Design"],
-    image: "/images/projects/todo-app-react.png",
+      "A visually stunning NASA explorer app built with React and Vite. Browse NASA's Astronomy Picture of the Day, search for space images, and enjoy a responsive, modern UI.",
+    tech: ["React", "Vite", "JavaScript", "CSS3", "NASA API"],
+    image: "/images/projects/nasa-project.png",
   },
   {
-    id: "login-signup-page" as ProjectId,
-    title: "Login Signup Page",
+    id: "movies" as ProjectId,
+    title: "Movies App",
     description:
-      "Auth UI with React + Redux: Smooth animated login/signup forms with Zod validation. Features a stunning purple gradient background and modern card design.",
-    tech: ["React", "Redux", "Zod", "JavaScript"],
-    image: "/images/projects/login-signup-page.png",
+      "A modern movie discovery app built with React and Vite. Features movie search, filtering, responsive design, and integration with a movie API. Clean UI with dark theme and smooth animations.",
+    tech: ["React", "Vite", "JavaScript", "CSS3", "API Integration"],
+    image: "/images/projects/movies.png",
   },
   {
-    id: "hangman-game" as ProjectId,
-    title: "Hangman Game",
+    id: "gemini-app" as ProjectId,
+    title: "Gemini App",
     description:
-      "Interactive Hangman game with modern UI design, hint system, and visual hangman progression. Features a clean orange-themed interface with clickable alphabet buttons and real-time feedback.",
-    tech: ["JavaScript", "HTML5", "CSS3", "Game Logic"],
-    image: "/images/projects/hangman-game.png",
+      "A Gemini AI chat clone built with React and Vite. Features conversational UI, prompt history, and a sleek, modern design with smooth animations.",
+    tech: ["React", "Vite", "JavaScript", "CSS3", "gemini API"],
+    image: "/images/projects/gemini-app.png",
   },
   {
     id: "memory-card" as ProjectId,
@@ -56,12 +56,12 @@ const projects = [
     image: "/images/projects/memory-card.png",
   },
   {
-    id: "snake-game" as ProjectId,
-    title: "Snake Game",
+    id: "express-api" as ProjectId,
+    title: "User Management System",
     description:
-      "Modern Snake game with stunning purple gradient UI and dual control support. Features responsive design with both arrow key and touch controls, real-time score tracking, best score persistence, and smooth gameplay on a dark canvas with vibrant snake and food graphics.",
-    tech: ["JavaScript", "Canvas API", "Local Storage", "Touch Events"],
-    image: "/images/projects/snake-game.png",
+      "A modern Express.js REST API with comprehensive user CRUD operations. Features a beautiful, responsive frontend interface with glass morphism design, real-time updates, and robust error handling.",
+    tech: ["Express.js", "Node.js", "JavaScript", "REST API", "CRUD Operations"],
+    image: "/images/projects/express-api.png",
   },
 ]
 
@@ -141,9 +141,6 @@ const ProjectCard = memo(({ project, index }: { project: (typeof projects)[0]; i
                 <ExternalLink className="w-4 h-4" />
               </Link>
             </div>
-          </div>
-          <div className="absolute top-4 left-4">
-            <DeploymentStatus status={urls.status} />
           </div>
         </div>
       </MemoizedCardHeader>
