@@ -15,6 +15,9 @@ import { AnimationProvider } from "./components/animations/animation-provider"
 import { AnimatedElement } from "./components/animations/animated-element"
 import { SimplePerformanceMonitor } from "./components/admin/simple-performance-monitor"
 import { useEffect, useState, memo, useCallback, Suspense } from "react"
+import { TypingEffect } from "./components/TypingEffect"
+import { AnimatedBackground } from "./components/AnimatedBackground"
+import { InteractiveIcons } from "./components/InteractiveIcons"
 
 // Error boundary component
 const ErrorFallback = ({ error }: { error: Error }) => (
@@ -242,8 +245,9 @@ function PortfolioContent() {
         <section
           ref={heroRef}
           id="home"
-          className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 lg:pt-28"
+          className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 lg:pt-28 relative"
         >
+          <AnimatedBackground />
           <div className="max-w-7xl mx-auto">
             <div
               className={`text-center space-y-8 transition-all duration-1000 ${
@@ -256,9 +260,7 @@ function PortfolioContent() {
                   delay={0.3}
                   className="text-4xl sm:text-6xl lg:text-7xl font-bold"
                 >
-                  <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x">
-                    Frontend Developer
-                  </span>
+                  <TypingEffect />
                 </AnimatedElement>
                 <AnimatedElement
                   animation="fadeInUp"
@@ -273,14 +275,6 @@ function PortfolioContent() {
               </div>
               <AnimatedElement
                 animation="fadeInUp"
-                delay={0.9}
-                className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
-              >
-                Self-taught frontend dev who loves crafting smooth, responsive UIs with React and Tailwind. Quick
-                learner, team player, and always down to build cool stuff that users actually enjoy.
-              </AnimatedElement>
-              <AnimatedElement
-                animation="fadeInUp"
                 delay={1.1}
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center"
               >
@@ -293,7 +287,7 @@ function PortfolioContent() {
                 </Button>
               </AnimatedElement>
               <AnimatedElement animation="fadeInUp" delay={1.3}>
-                <SocialLinks className="pt-8" />
+                <InteractiveIcons className="pt-8" />
               </AnimatedElement>
             </div>
           </div>
