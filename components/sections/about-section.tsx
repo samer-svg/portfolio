@@ -37,7 +37,9 @@ export default function AboutSection() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-300 leading-relaxed text-xl">
-              Self-taught frontend developer obsessed with sleek, responsive UIs built with React and Tailwind. Quick to learn, easy to work with, and driven to craft experiences people actually love using. Now leveling up into full-stack development to build smarter, more complete web solutions.
+                Self-taught frontend developer obsessed with sleek, responsive UIs built with React and Tailwind.
+                Quick to learn, easy to work with, and driven to craft experiences people actually love using.
+                Now leveling up into full-stack development to build smarter, more complete web solutions.
               </p>
             </CardContent>
           </Card>
