@@ -280,7 +280,7 @@ function PortfolioContent() {
               >
                 <Button
                   size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-600/25 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-950"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-600/25 active:scale-95 focus:outline-none focus:ring-offset-gray-950"
                   onClick={scrollToProjects}
                 >
                   View My Work
