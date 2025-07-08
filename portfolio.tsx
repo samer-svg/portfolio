@@ -273,14 +273,6 @@ function PortfolioContent() {
               </div>
               <AnimatedElement
                 animation="fadeInUp"
-                delay={0.9}
-                className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
-              >
-                Self-taught frontend dev who loves crafting smooth, responsive UIs with React and Tailwind. Quick
-                learner, team player, and always down to build cool stuff that users actually enjoy.
-              </AnimatedElement>
-              <AnimatedElement
-                animation="fadeInUp"
                 delay={1.1}
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center"
               >
