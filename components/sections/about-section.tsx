@@ -53,7 +53,7 @@ export default function AboutSection() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300 text-lg">📍 Lattakia, Syria</p>
+              <p className="text-gray-300 text-lg">📍 UAE , Dubai</p>
               <p className="text-gray-400 text-sm mt-2">Open to remote opportunities worldwide</p>
             </CardContent>
           </Card>
