@@ -270,7 +270,7 @@ function PortfolioContent() {
                   Learning Full Stack
                 </AnimatedElement>
                 <AnimatedElement animation="fadeInUp" delay={0.7} className="text-lg text-gray-400 max-w-md mx-auto">
-                  📍 Dubai,UAE
+                  📍 Latakia,Syria 
                 </AnimatedElement>
               </div>
               <AnimatedElement
